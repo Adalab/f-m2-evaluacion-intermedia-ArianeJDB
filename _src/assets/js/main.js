@@ -6,14 +6,6 @@
   const btn = document.querySelector('.btn');
   const feedback = document.querySelector('.feedback');
 
-//Funcion condiconal
-
-
-function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);
-    
-  }
-  console.log('> ' + getRandomNumber(100));
 
 
   function final() {
@@ -27,7 +19,17 @@ function getRandomNumber(max) {
     feedback.innerHTML = '¡HAS GANADO, CAMPEONA!'
   }
   }
+
   btn.addEventListener('click', final);
+  
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * max);
+    
+  }
+
+
+  console.log('> ' + getRandomNumber(100));
+  
 
   
   //PIntar en azul: pistas feeback
